@@ -8,3 +8,5 @@ my-app Home page:
 
 
 
+
+mongodb+srv://mainUser:@blink182@cluster0.j5xzc.mongodb.net/ReactCourse?retryWrites=true&w=majority
