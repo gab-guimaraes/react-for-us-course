@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import HeaderLoggedIn from './HeaderLoggedIn';
 import HeaderLoggedOut from './HeaderLoggedOut';
 
-function Header() {
-  const[loggedIn, setLoggedIn] = useState(Boolean(localStorage.getItem("complexappToken")));
-
+function Header(props) {
+  
   return (
     <header className="header-bar bg-primary mb-3">
     <div className="container d-flex flex-column flex-md-row align-items-center p-3">
@@ -14,7 +13,7 @@ function Header() {
         </a>
       </h4>
       {
-        loggedIn ? <HeaderLoggedIn setLoggedIn={setLoggedIn} /> : <HeaderLoggedOut setLoggedIn={setLoggedIn}  />
+        props.loggedIn ? <HeaderLoggedIn setLoggedIn={props.setLoggedIn} /> : <HeaderLoggedOut setLoggedIn={props.setLoggedIn}  />
       }
   
     </div>
