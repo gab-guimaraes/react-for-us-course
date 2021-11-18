@@ -1,6 +1,7 @@
 # react-for-us-course
 
-Creating web applications with React js.
+Creating social media front-end with React Js.
+
 
 my-app Home page:
 
